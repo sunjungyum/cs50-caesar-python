@@ -12,11 +12,11 @@ if len(sys.argv) != 2:
 # Declares an int variable for the key
 key = int(sys.argv[1])
 
-# Prompts for the plain text
+# Prompts for the plaintext
 plaintext = get_string("plaintext: ")
 print("ciphertext: ", end="")
 
-# Iterates through each character of the plain text
+# Iterates through each character of the plaintext
 for c in plaintext:
     if c.isalpha():
         # Rotates characters as uppercase characters
