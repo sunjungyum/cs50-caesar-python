@@ -22,7 +22,7 @@ for p in plaintext:
         # Rotates characters as uppercase characters
         upper = p.upper()
         alphabeticalindex = ord(upper) - 65
-        # Uses a separate variable called "result" because c's case needs to be checked
+        # Uses a separate variable called "result" because p's case needs to be checked
         result = 65 + ((alphabeticalindex + key) % 26)
         # Converts it back to a separate char (if original was lowercase, returns back to lowercase)
         if p.islower():
