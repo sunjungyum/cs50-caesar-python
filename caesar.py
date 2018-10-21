@@ -1,16 +1,17 @@
 # Sun-Jung Yum
 # Problem Set 6
+# Caesar (Python)
 # 25 October 2018
 
-import sys
+from sys import argv, exit
 from cs50 import get_string
 
 # Ensures that the usage is correct
-if len(sys.argv) != 2:
-    sys.exit("Usage: python caesar.py k")
+if len(argv) != 2:
+    exit("Usage: python caesar.py k")
 
 # Declares an int variable for the key
-key = int(sys.argv[1])
+key = int(argv[1])
 
 # Prompts for the plaintext
 plaintext = get_string("plaintext: ")
